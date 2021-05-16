@@ -35,28 +35,6 @@ class Submission(object):
         self._language = sub_dic["language"]
         self._result = sub_dic["result"]
 
-    def _split_problem_id(self) -> str:
-        # problem_id が codefestival_2016_qualB_a のように、
-        # 複数のアンダースコアを含むことがある。
-        # そのため、最後のアンダースコアを境に得るようにする。
-        return re.search(r'^(.+?)_(.)$', self.problem_id)
-
-    def get_problem_id_postfix(self) -> str:
-        m = self._split_problem_id()
-        assert m
-        postfix = m.group(2)
-
-        # 古い問題の場合は数字なので、アルファベットに戻す。
-        if postfix.isdigit():
-            postfix = chr(int(postfix)+ord('a')-1)
-
-        return postfix
-
-    def get_contest_id_from_problem_id(self) -> str:
-        m = self._split_problem_id()
-        assert m
-        return m.group(1)
-
     def is_ac(self) -> bool:
         return self.result == "AC"
 
