@@ -16,6 +16,7 @@
 ## 実行方法
 
 ```sh
+poetry install
 ./run.ps1
 ```
 
