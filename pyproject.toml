@@ -8,9 +8,10 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.8"
 requests = "^2.25.1"
-chromedriver_binary = "^90.0.4430"
 selenium = "^3.141.0"
 toml = "^0.10.2"
+chromedriver-binary = "^93.0.4577"
+chromedriver-binary-auto = "^0.1.1"
 
 [tool.poetry.dev-dependencies]
 

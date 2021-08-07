@@ -16,7 +16,15 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
 name = "chromedriver-binary"
-version = "90.0.4430.24.0"
+version = "93.0.4577.15.0"
+description = "Installer for chromedriver."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "chromedriver-binary-auto"
+version = "0.1.1"
 description = "Installer for chromedriver."
 category = "main"
 optional = false
@@ -83,7 +91,7 @@ brotli = ["brotlipy (>=0.6.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "140641d78c1d56bf486a8de113c239e89644ce6061791389d6ba71ae6d227ef1"
+content-hash = "e4e4766505e4ce18ba33b707bf34208a7162554b1157100e3cd8b9a044265f7e"
 
 [metadata.files]
 certifi = [
@@ -95,7 +103,10 @@ chardet = [
     {file = "chardet-4.0.0.tar.gz", hash = "sha256:0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa"},
 ]
 chromedriver-binary = [
-    {file = "chromedriver-binary-90.0.4430.24.0.tar.gz", hash = "sha256:2f59290493cb66fb9a6a28590a68dc8cf40773224a52f0e258ab4fc1c6785b33"},
+    {file = "chromedriver-binary-93.0.4577.15.0.tar.gz", hash = "sha256:23a87b73896d99d0a1704450958cff5f40b9ab04f4e1d43ed4a239f89fad6a0e"},
+]
+chromedriver-binary-auto = [
+    {file = "chromedriver-binary-auto-0.1.1.tar.gz", hash = "sha256:7c0eee0eef320f31d0673d8d49412656eb22bf38d47c4c2783f4ea86802720b1"},
 ]
 idna = [
     {file = "idna-2.10-py2.py3-none-any.whl", hash = "sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"},
